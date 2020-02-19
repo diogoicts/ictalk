@@ -16,6 +16,7 @@ import speaker_2 from '../../assets/speaker_2.png'
 import speaker_3 from '../../assets/speaker_3.png'
 import ictalk_footer from '../../assets/ictalk_footer.png'
 import logo_icts from '../../assets/logo_icts.png'
+import logo_principal from '../../assets/logo_principal.png'
 import footer from '../../assets/footer.png'
 
 
@@ -152,7 +153,7 @@ export default function Home() {
             <img src={ictalk_footer} alt='ICTALK Logo' />
           </a>
           <a href='https://www.grupoicts.com.br/' target='_blank'> 
-            <img src={logo_icts} alt='ICTS Logo' /> 
+            <img src={logo_principal} alt='ICTS Logo' /> 
           </a>
         </div>
         <img src={footer} alt='Footer' /> 

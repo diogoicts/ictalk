@@ -50,6 +50,7 @@ export const HomeInfo = styled.div`
       height: 6rem;
       padding-top: 2rem;
       cursor: pointer;
+      
 
 
       &:hover {
