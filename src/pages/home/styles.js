@@ -7,6 +7,10 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+
+  @media(max-width: 480px) {
+    overflow-x: auto;     
+  }
   
 `;
 
@@ -29,6 +33,8 @@ export const HomeInfo = styled.div`
   
 
   header {
+    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,6 +51,7 @@ export const HomeInfo = styled.div`
       padding-top: 2rem;
       cursor: pointer;
 
+
       &:hover {
         border-bottom: 3px solid #E6881A;
       }
@@ -55,13 +62,59 @@ export const HomeInfo = styled.div`
       height: 7.3rem;
       cursor: pointer;
     }
+
+    div {
+      width: 17.3rem;
+      height: 100%;
+    }
   }
 
-  
+  @media(max-width: 480px) {
+
+    img {
+      width: 28rem;
+      height: 24.46rem;
+    }
+    > div {
+      > div {
+      flex-direction: column;
+        > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    } 
+
+    header {
+    align-items: center;
+    padding: 2rem 2rem 0rem 2rem;
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 2.4rem;
+      letter-spacing: 1.44px;
+      height: 6rem;
+      padding-top: 2rem;
+      display: none;
+
+      &:hover {
+        border-bottom: 3px solid #E6881A;
+      }
+    }
+
+    img {
+      width: 8.6rem;
+      height: 3.6rem;
+      
+    }
+  } 
+  }
 `;
 
 export const IctalkInfo = styled.div`
-  margin: 10rem 0rem 0rem 16.8rem;
+  margin: 10rem 0rem 0rem 12.8rem;
 
   h3 {
     font-size: 2.4rem;
@@ -129,6 +182,51 @@ export const IctalkInfo = styled.div`
       color: #E6881A;
     }
   }
+
+  @media(max-width: 480px){
+    order: 2;
+    margin: 4.84rem 0rem 0rem 0rem;
+
+    h3 {
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+    margin-bottom: 0.7rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  button {
+    height: 4.4rem;
+    width: 14.2rem;
+    background-color: #E6881A;
+    font-size: 1.8rem;
+    letter-spacing: 0.36px;
+    margin: 3.2rem 0rem 2.98rem 0rem;
+  }
+
+  div {
+    margin-bottom: 5.6rem;
+    h3 {
+      margin: 0rem 1.5rem 0rem 0rem;
+    }
+    i {
+      font-size: 2rem;
+    }
+  }
+  }
+
+  
 `;
 
 
@@ -153,7 +251,22 @@ export const HomeAbout = styled.div`
     margin-top: 91.1rem;
   }
 
+  @media(max-width: 480px) {
 
+  > #orange-balloon img {
+    width: 10.2rem;
+    height: 10.2rem;
+    margin-left: -5.1rem;
+    margin-top: 8.2rem;
+  }
+
+  > #blue-balloon img {
+    width: 8.1rem;
+    height: 8.1rem;
+    margin-right: -3.2rem;
+    margin-top: 29rem;
+  }
+  }
 `;
 
 export const IctalkAbout = styled.div`
@@ -164,6 +277,8 @@ export const IctalkAbout = styled.div`
 
   div {
     margin-left: 6.1rem;
+    width: 86.1rem;
+    text-align: justify;
     h1 {
       font-size: 6.2rem;
       color: #E6881A;
@@ -198,14 +313,61 @@ export const IctalkAbout = styled.div`
       }
     }
 
+    @media(max-width: 480px) {
+
+      margin-top: 14.6rem;
+      width: 100%;
+
+  div {
+    margin-left: 1.6rem;
+    width: 22rem;
+    h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1.08px;
+      margin-bottom: 0.6rem;
+    }
+    P {
+      font-size: 1.2rem;
+    }
+  }
+
+  img {
+      margin: 9rem 0rem 1.6rem 0rem; 
+      width: 24.3rem;
+      height: 15.7rem;
+      align-self: center;
+    }
+
+    footer {
+      margin-bottom: 4.3rem;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+  }
+
 `;
 
 export const WhiteBlue = styled.div`
-  margin-bottom: -5rem;
+  margin-bottom: -6rem;
 
   img {
     height: 18.98rem;
     width: 100%;
+  }
+
+  @media(max-width: 480px) {
+    margin-bottom: -1.5rem;
+
+    img {
+      height: 3.986rem;
+      width: 100%;
+    }  
   }
 `;
 
@@ -247,6 +409,34 @@ export const WhoTalk = styled.div`
       font-weight: 100;
     }
   }
+
+  @media(max-width: 480px) {
+    height: 16.9rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 15.7rem;
+
+      h1 {
+        font-size: 1.4rem;
+        letter-spacing: 1.62px;
+        margin-bottom: 0.2rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+        text-align: center;
+      }
+    }  
+  }
 `;
 
 export const BlueWhite = styled.div`
@@ -256,6 +446,14 @@ export const BlueWhite = styled.div`
     height: 18.98rem;
     width: 100%;
   }
+
+  @media(max-width: 480px) {
+    margin-top: -2.5rem;
+
+    img {
+      height: 3.986rem;
+    }
+  }
 `;
 
 export const SignUp = styled.div`
@@ -263,6 +461,7 @@ export const SignUp = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 32.5rem;
+  margin-top: 2rem;
 
   h1 {
     font-size: 5.4rem;
@@ -274,6 +473,15 @@ export const SignUp = styled.div`
       color: #E6881A;
     }
   }
+
+  @media(max-width: 480px) {
+    margin-bottom: 5rem;
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1.9rem;
+    }  
+  }
 `;
 
 export const SignupCards = styled.div`
@@ -282,7 +490,12 @@ export const SignupCards = styled.div`
   width: 120.2rem;
   justify-content: space-between;
 
-  
+  @media(max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between; 
+  }
 `;
 
 export const Card = styled.div`
@@ -312,6 +525,7 @@ export const Card = styled.div`
   border-radius: 3.2rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
   transition: box-shadow 0.2s;
 
@@ -328,6 +542,40 @@ export const Card = styled.div`
     button {
         background-color: ${props => darken(0.1,  (props.speaker ? '#284C61' : '#E6881A'))};
     }
+  }
+
+  @media(max-width: 480px) {
+    margin-bottom: 2rem;
+    button {
+      font-size: 1.4rem;
+      border-radius: 5.3rem;
+      width: 10rem;
+      height: 4rem;
+      color: #FFFFFF;
+      margin-top: -2rem;
+       
+      background-color: ${props => (props.speaker ? '#284C61' : '#E6881A')};
+      box-shadow: 0px 2px 8px ${props => (props.speaker ? '#284C61' : '#E6881A')};;
+      transition: background 0.5s;
+    }
+
+    div {
+
+      width: 15.1rem;
+      height: 18rem;
+      border-radius: 1.2rem;
+
+        img {
+          width: 13rem;
+          height: 13rem;
+        }
+      }
+
+      &:hover {
+        button {
+          background-color: ${props => darken(0.1,  (props.speaker ? '#284C61' : '#E6881A'))};
+        }
+      } 
   }
 `;
 
@@ -351,6 +599,22 @@ export const Speakers = styled.div`
     grid-gap: 12rem;
     grid-template-columns: repeat(3, 1fr)
   }
+
+  @media(max-width: 480px) {
+    margin-bottom: 7.2rem;
+
+    h1 {
+      margin-bottom: 4.3rem;
+      font-size: 1.4rem;
+    }
+
+    > div {
+      width: 100%;
+      display: grid;
+      grid-gap: 6rem;
+      grid-template-columns: repeat(1, 1fr)
+    }
+  }
 `;
 
 export const Speaker = styled.div`
@@ -372,9 +636,34 @@ export const Speaker = styled.div`
   h4 {
     font-size: 2.8rem;
     color: #284C61;
-    padding: 0rem 1rem;
+    padding: 0rem 1.1rem;
     font-weight: normal;
     text-align: center;
+  }
+
+  @media(max-width: 480px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17rem;
+    margin: auto;
+    img {
+      width: 14.509rem;
+      height: 14.475rem;
+      margin-bottom: 1.55rem;
+    }  
+
+    h3 {
+      font-size: 1.4rem;
+      padding: 0rem 0.5rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+      padding: 0rem 1rem;
+    }
   }
 `;
 
@@ -390,10 +679,26 @@ export const Footer = styled.div`
 
     img {
       height: 10.7rem;
+      cursor: pointer;
     }
   }
 
   > img {
     width: 100%;
+  }
+
+  @media(max-width: 480px) {
+    div {
+      width: 15rem;
+      margin-bottom: 1rem;
+
+      img {
+        height: 1.737rem;
+      }
+    }
+
+    > img {
+      width: 100%;
+    }
   }
 `;

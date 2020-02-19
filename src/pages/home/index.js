@@ -13,6 +13,7 @@ import speaker_avatar from '../../assets/speaker_avatar.png'
 import participant from '../../assets/participant.png'
 import speaker_1 from '../../assets/speaker_1.png'
 import speaker_2 from '../../assets/speaker_2.png'
+import speaker_3 from '../../assets/speaker_3.png'
 import ictalk_footer from '../../assets/ictalk_footer.png'
 import logo_icts from '../../assets/logo_icts.png'
 import footer from '../../assets/footer.png'
@@ -24,10 +25,14 @@ export default function Home() {
   return (
     <Container >
       <HomeInfo>
-        <div>
+        <div id='home'>
           <header>
+            <a href='#about'>
             <img src={header_logo} alt='header-logo' />
-            <h3>O ICTALK</h3>
+            </a>
+            <a href='#about'>
+              <h3>O ICTALK</h3>
+            </a>
             <div></div>
           </header>
           <div>
@@ -43,7 +48,7 @@ export default function Home() {
                 Inscrições
               </button>
               </a>
-              <a href='#about'>
+              <a href='#speakers'>
               <div>
                 <h3>
                   Ver mais 
@@ -68,9 +73,9 @@ export default function Home() {
           <div id='about'>
             <h1>ICTALK?</h1>
             <p>
-                &emsp;Acreditamos que falar de tecnologia é essencial para o <br /> desenvolvimento da comunidade
-                e de nossa empresa. Por <br /> isso, criamos o ICTALK, um <i>meetup</i> mensal, onde
-                falaremos <br /> de tecnologia e outras modinhas.<br />
+                &emsp;Acreditamos que falar de tecnologia é essencial para o  desenvolvimento da comunidade
+                e de nossa empresa. Por  isso, criamos o ICTALK, um <i>meetup</i> mensal, onde
+                falaremos  de tecnologia e outras modinhas.
             </p>
           </div>
           <img src={ictalk_about} alt='ICTALK About' />
@@ -99,6 +104,7 @@ export default function Home() {
       <SignUp>
         <h1 id='signup'>Inscrições <span>FEV 2020</span></h1>
         <SignupCards>
+          <a href='https://forms.gle/edR8ijya7EUUq6WVA' target='_blank'>
           <Card>
             <div >
               <img src={participant} alt='participant' /> 
@@ -107,7 +113,9 @@ export default function Home() {
               Participante
             </button>
           </Card>
-          <Card speaker>
+          </a>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLScKE_7yHsJh-_L_t6PevlWOn0hilO25lqEKKwNlQFRwx7ac9Q/viewform' target='_blank'>
+          <Card speaker >
             <div>
               <img src={speaker_avatar} alt='Speaker' /> 
             </div>
@@ -115,9 +123,10 @@ export default function Home() {
               Palestrante
             </button>
           </Card>
+          </a>
         </SignupCards>
       </SignUp>
-      <Speakers>
+      <Speakers id='speakers'>
         <h1>Palestras Edição FEV 2020</h1>
         <div>
           <Speaker>
@@ -131,16 +140,20 @@ export default function Home() {
             <h4>Visão Computacional: Conceitos e Aplicações em Projetos</h4>
           </Speaker>
           <Speaker>
-            <img src={speaker_avatar} alt='Speaker' />  
-            <h3>John Doe</h3>
-            <h4>Lorem ipsum dolor sit amet.</h4>
+            <img src={speaker_3} alt='Speaker' />  
+            <h3>Lucas Evangelista</h3>
+            <h4>Porquê Inteligência Artificial não é IF-ELSE</h4>
           </Speaker>
         </div>
       </Speakers>
       <Footer>
         <div>
-          <img src={ictalk_footer} alt='ICTALK Logo' /> 
-          <img src={logo_icts} alt='ICTS Logo' /> 
+          <a href='#home'>
+            <img src={ictalk_footer} alt='ICTALK Logo' />
+          </a>
+          <a href='https://www.grupoicts.com.br/' target='_blank'> 
+            <img src={logo_icts} alt='ICTS Logo' /> 
+          </a>
         </div>
         <img src={footer} alt='Footer' /> 
       </Footer>
