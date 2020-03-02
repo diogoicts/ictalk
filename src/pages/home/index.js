@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import { Container, HomeInfo, HomeAbout, IctalkInfo, IctalkAbout, WhiteBlue, WhoTalk, 
           BlueWhite, SignUp, SignupCards, Card, Speakers, Speaker, Footer } from './styles';
 import header_logo from '../../assets/header_logo.png'
@@ -15,7 +16,6 @@ import speaker_1 from '../../assets/speaker_1.png'
 import speaker_2 from '../../assets/speaker_2.png'
 import speaker_3 from '../../assets/speaker_3.png'
 import ictalk_footer from '../../assets/ictalk_footer.png'
-import logo_icts from '../../assets/logo_icts.png'
 import logo_principal from '../../assets/logo_principal.png'
 import footer from '../../assets/footer.png'
 
@@ -30,7 +30,7 @@ export default function Home() {
           <header>
             <a href='#about'>
             <img src={header_logo} alt='header-logo' />
-            </a>
+            </a>            
             <a href='#about'>
               <h3>O ICTALK</h3>
             </a>
@@ -38,7 +38,6 @@ export default function Home() {
           </header>
           <div>
             <IctalkInfo>
-              
               <h3>EDIÇÃO</h3>
               <h1>FEV 2020</h1>
               <p>Automação . Software . Produção</p>
@@ -71,7 +70,7 @@ export default function Home() {
           <img src={orange_dialog} alt='Orange Balloon' />
         </div>
         <IctalkAbout>
-          <div id='about'>
+          <div id="about">
             <h1>ICTALK?</h1>
             <p>
                 &emsp;Acreditamos que falar de tecnologia é essencial para o  desenvolvimento da comunidade
@@ -105,7 +104,7 @@ export default function Home() {
       <SignUp>
         <h1 id='signup'>Inscrições <span>FEV 2020</span></h1>
         <SignupCards>
-          <a href='https://forms.gle/edR8ijya7EUUq6WVA' target='_blank'>
+          <a href='https://forms.gle/edR8ijya7EUUq6WVA' target='_blank' rel="noopener noreferrer">
           <Card>
             <div >
               <img src={participant} alt='participant' /> 
@@ -115,7 +114,7 @@ export default function Home() {
             </button>
           </Card>
           </a>
-          <a href='https://docs.google.com/forms/d/e/1FAIpQLScKE_7yHsJh-_L_t6PevlWOn0hilO25lqEKKwNlQFRwx7ac9Q/viewform' target='_blank'>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLScKE_7yHsJh-_L_t6PevlWOn0hilO25lqEKKwNlQFRwx7ac9Q/viewform' target='_blank' rel="noopener noreferrer">
           <Card speaker >
             <div>
               <img src={speaker_avatar} alt='Speaker' /> 
@@ -152,7 +151,7 @@ export default function Home() {
           <a href='#home'>
             <img src={ictalk_footer} alt='ICTALK Logo' />
           </a>
-          <a href='https://www.grupoicts.com.br/' target='_blank'> 
+          <a href='https://www.grupoicts.com.br/' target='_blank' rel="noopener noreferrer"> 
             <img src={logo_principal} alt='ICTS Logo' /> 
           </a>
         </div>
