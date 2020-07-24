@@ -12,9 +12,10 @@ import white_to_blue_dialogs from '../../assets/white_to_blue_dialogs.svg'
 import blue_to_white_dialogs from '../../assets/blue_to_white_dialogs.svg'
 import speaker_avatar from '../../assets/speaker_avatar.png'
 import participant from '../../assets/participant.png'
-import speaker_1 from '../../assets/speaker_1.png'
-import speaker_2 from '../../assets/speaker_2.png'
-import speaker_3 from '../../assets/speaker_3.png'
+// import speaker_1 from '../../assets/speaker_1.png'
+// import speaker_2 from '../../assets/speaker_2.png'
+// import speaker_3 from '../../assets/speaker_3.png'
+import speaker_4 from '../../assets/speaker_4.jpg'
 import ictalk_footer from '../../assets/ictalk_footer.png'
 import logo_principal from '../../assets/logo_principal.png'
 import footer from '../../assets/footer.png'
@@ -129,7 +130,7 @@ export default function Home() {
       <Speakers id='speakers'>
         <h1>Palestras Edição FEV 2020</h1>
         <div>
-          <Speaker>
+          {/* <Speaker>
             <img src={speaker_1} alt='Speaker' />  
             <h3>Vitória Leite</h3>
             <h4>Firmware na Automação Industrial</h4>
@@ -143,6 +144,11 @@ export default function Home() {
             <img src={speaker_3} alt='Speaker' />  
             <h3>Lucas Evangelista</h3>
             <h4>Porquê Inteligência Artificial não é IF-ELSE</h4>
+          </Speaker> */}
+          <Speaker>
+            <img src={speaker_4} alt='Speaker' />  
+            <h3>Diogo Araújo</h3>
+            <h4>Web Software Developer</h4>
           </Speaker>
         </div>
       </Speakers>
